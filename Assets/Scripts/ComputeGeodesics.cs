@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 using System;
@@ -11,6 +10,7 @@ public class ComputeGeodesics : MonoBehaviour
 {
     #region PUBLIC_MEMBERS
 
+    [Header("This option will have no effect during runtime.")]
     public string filepath = "Kitten_256x256.png";
 
     #endregion // PUBLIC_MEMBERS
@@ -61,18 +61,20 @@ public class ComputeGeodesics : MonoBehaviour
     {
         var stopwatch = new Stopwatch();
 
-        stopwatch.Start();
-        double[] phi = FMM.Compute(area, W, H, 1, new int[1] { GetVoxelIndex(i0, j0) }, new double[1] { 0.0f } );
-        stopwatch.Stop();
-
-        // handling out-of-range
-        for (int i = 0; i < W * H; i++)
         {
-            if (!area[i]) phi[i] = 0.0;
-        }
+            stopwatch.Start();
+            double[] phi = FMM.Compute(area, W, H, 1, new int[1] { GetVoxelIndex(i0, j0) }, new double[1] { 0.0f } );
+            stopwatch.Stop();
 
-        print(string.Format("fast marching method: {0} [msec]", stopwatch.ElapsedMilliseconds));
-        return phi;
+            // handling out-of-range
+            for (int i = 0; i < W * H; i++)
+            {
+                if (!area[i]) phi[i] = 0.0;
+            }
+
+            print(string.Format("fast marching method: {0} [msec]", stopwatch.ElapsedMilliseconds));
+            return phi;
+        }
     }
 
     void VisualizeDistanceDense(double[] phi_dense)
@@ -86,18 +88,20 @@ public class ComputeGeodesics : MonoBehaviour
         {
             for (int i1 = 0; i1 < W; i1++)
             {
-                if (area[i1 + j1 * W])
+                int voxid_this = GetVoxelIndex(i1, j1);
+
+                if (area[voxid_this])
                 {
-                    float val01 = (float)((phi_dense[i1 + j1 * W] - phi_min) / (phi_max - phi_min));
+                    float val01 = (float)((phi_dense[voxid_this] - phi_min) / (phi_max - phi_min));
 
                     // "hot" colormap in MATLAB/matplotlib
                     float r = Mathf.Clamp(2.62518523f * (255.0f * val01 -   0.0f) + 10.60800f, 0.0f, 255.0f); // at   0/255
                     float g = Mathf.Clamp(2.62499573f * (255.0f * val01 -  94.0f) +  2.37524f, 0.0f, 255.0f); // at  94/255
                     float b = Mathf.Clamp(3.93750394f * (255.0f * val01 - 191.0f) +  2.99975f, 0.0f, 255.0f); // at 191/255
 
-                    pixels32[i1 + j1 * W].r = (byte)r;
-                    pixels32[i1 + j1 * W].g = (byte)g;
-                    pixels32[i1 + j1 * W].b = (byte)b;
+                    pixels32[voxid_this].r = (byte)r;
+                    pixels32[voxid_this].g = (byte)g;
+                    pixels32[voxid_this].b = (byte)b;
                 }
             }
         }
