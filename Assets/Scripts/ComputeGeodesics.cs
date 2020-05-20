@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#define USE_3RDPARTY
+
+using System.Collections.Generic;
 using UnityEngine;
 
 using System;
@@ -46,10 +48,13 @@ public class ComputeGeodesics : MonoBehaviour
 
 
     #region PRIVATE_MEMBERS
-
+#if USE_3RDPARTY
+    private SuperLU solver_heat;
+    private SuperLU solver_dist;
+#else
     private SparseCholesky solver_heat;
     private SparseCholesky solver_dist;
-
+#endif
     #endregion // PRIVATE_MEMBERS
 
 
@@ -382,7 +387,14 @@ public class ComputeGeodesics : MonoBehaviour
         ////////////////////////////////////////////////////////////
         // step I-2. build matrix A for heat diffusion
         ////////////////////////////////////////////////////////////
+#if USE_3RDPARTY
+        solver_heat = new SuperLU(A_heat);
+        var options = solver_heat.Options;
+        options.SymmetricMode = true;
+        solver_heat.Factorize();
+#else
         solver_heat = SparseCholesky.Create(A_heat, ColumnOrdering.MinimumDegreeAtPlusA);
+#endif
     }
 
     void PrecomputeDistanceMatrix2D(int W, int H, bool show = true)
@@ -425,7 +437,14 @@ public class ComputeGeodesics : MonoBehaviour
         ////////////////////////////////////////////////////////////
         // step III-2. build matrix A for heat diffusion
         ////////////////////////////////////////////////////////////
+#if USE_3RDPARTY
+        solver_dist = new SuperLU(A_dist);
+        var options = solver_dist.Options;
+        options.SymmetricMode = true;
+        solver_dist.Factorize();
+#else
         solver_dist = SparseCholesky.Create(A_dist, ColumnOrdering.MinimumDegreeAtPlusA);
+#endif
     }
 
     #endregion // PRECOMPUTATION
