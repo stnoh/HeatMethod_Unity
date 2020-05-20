@@ -1,4 +1,5 @@
 ﻿#define USE_3RDPARTY
+#define USE_CHOLMOD // [CAUTION] this module is under GPL
 
 using System.Collections.Generic;
 using UnityEngine;
@@ -49,8 +50,13 @@ public class ComputeGeodesics : MonoBehaviour
 
     #region PRIVATE_MEMBERS
 #if USE_3RDPARTY
+#if USE_CHOLMOD
+    private Cholmod solver_heat;
+    private Cholmod solver_dist;
+#else
     private SuperLU solver_heat;
     private SuperLU solver_dist;
+#endif
 #else
     private SparseCholesky solver_heat;
     private SparseCholesky solver_dist;
@@ -388,9 +394,13 @@ public class ComputeGeodesics : MonoBehaviour
         // step I-2. build matrix A for heat diffusion
         ////////////////////////////////////////////////////////////
 #if USE_3RDPARTY
+#if USE_CHOLMOD
+        solver_heat = new Cholmod(A_heat);
+#else
         solver_heat = new SuperLU(A_heat);
         var options = solver_heat.Options;
         options.SymmetricMode = true;
+#endif
         solver_heat.Factorize();
 #else
         solver_heat = SparseCholesky.Create(A_heat, ColumnOrdering.MinimumDegreeAtPlusA);
@@ -438,9 +448,13 @@ public class ComputeGeodesics : MonoBehaviour
         // step III-2. build matrix A for heat diffusion
         ////////////////////////////////////////////////////////////
 #if USE_3RDPARTY
+#if USE_CHOLMOD
+        solver_dist = new Cholmod(A_dist);
+#else
         solver_dist = new SuperLU(A_dist);
         var options = solver_dist.Options;
         options.SymmetricMode = true;
+#endif
         solver_dist.Factorize();
 #else
         solver_dist = SparseCholesky.Create(A_dist, ColumnOrdering.MinimumDegreeAtPlusA);

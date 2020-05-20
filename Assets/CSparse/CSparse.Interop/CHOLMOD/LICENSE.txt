@@ -1,0 +1,285 @@
+==> AMD/Doc/License.txt <==
+
+    AMD, Copyright (c), 1996-2015, Timothy A. Davis,
+    Patrick R. Amestoy, and Iain S. Duff.  All Rights Reserved.
+
+    Availability:
+
+        http://www.suitesparse.com
+
+    -------------------------------------------------------------------------------
+    AMD License: BSD 3-clause:
+    -------------------------------------------------------------------------------
+
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+            * Redistributions of source code must retain the above copyright
+              notice, this list of conditions and the following disclaimer.
+            * Redistributions in binary form must reproduce the above copyright
+              notice, this list of conditions and the following disclaimer in the
+              documentation and/or other materials provided with the distribution.
+            * Neither the name of the organizations to which the authors are
+              affiliated, nor the names of its contributors may be used to endorse
+              or promote products derived from this software without specific prior
+              written permission.
+
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+        ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+        LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+        OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+        DAMAGE.
+
+==> CAMD/Doc/License.txt <==
+
+    CAMD, Copyright (c) by Timothy A. Davis,
+    Yanqing Chen,
+    Patrick R. Amestoy, and Iain S. Duff.  All Rights Reserved.
+    CAMD is available under alternate licenses, contact T. Davis for details.
+
+    CAMD License: BSD 3-clause
+
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+            * Redistributions of source code must retain the above copyright
+              notice, this list of conditions and the following disclaimer.
+            * Redistributions in binary form must reproduce the above copyright
+              notice, this list of conditions and the following disclaimer in the
+              documentation and/or other materials provided with the distribution.
+            * Neither the name of the organizations to which the authors are
+              affiliated, nor the names of its contributors may be used to endorse
+              or promote products derived from this software without specific prior
+              written permission.
+
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+        ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+        LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+        OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+        DAMAGE.
+
+    Availability:
+
+        http://www.suitesparse.com
+
+==> CCOLAMD/Doc/License.txt <==
+
+    CCOLAMD: constrained column approximate minimum degree ordering
+    Copyright (C) 2005-2016, Univ. of Florida.  Authors: Timothy A. Davis,
+    Sivasankaran Rajamanickam, and Stefan Larimore.  Closely based on COLAMD by
+    Davis, Stefan Larimore, in collaboration with Esmond Ng, and John Gilbert.
+    http://www.suitesparse.com
+
+    --------------------------------------------------------------------------------
+
+    CCOLAMD license: BSD 3-clause:
+
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+            * Redistributions of source code must retain the above copyright
+              notice, this list of conditions and the following disclaimer.
+            * Redistributions in binary form must reproduce the above copyright
+              notice, this list of conditions and the following disclaimer in the
+              documentation and/or other materials provided with the distribution.
+            * Neither the name of the organizations to which the authors are
+              affiliated, nor the names of its contributors may be used to endorse
+              or promote products derived from this software without specific prior
+              written permission.
+
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+        ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+        LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+        OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+        DAMAGE.
+
+    --------------------------------------------------------------------------------
+
+==> CHOLMOD/Doc/License.txt <==
+        --------------------------------------------------------------------------------
+        ==> Check/License.txt <==
+        --------------------------------------------------------------------------------
+
+            CHOLMOD/Check Module.  Copyright (C) 2005-2006, Timothy A. Davis CHOLMOD is
+            also available under other licenses; contact authors for details.
+            http://www.suitesparse.com
+
+            Note that this license is for the CHOLMOD/Check module only.
+            All CHOLMOD modules are licensed separately.
+
+            ----------------------------------------------------------------------------
+
+            This Module is free software; you can redistribute it and/or
+            modify it under the terms of the GNU Lesser General Public
+            License as published by the Free Software Foundation; either
+            version 2.1 of the License, or (at your option) any later version.
+
+            This Module is distributed in the hope that it will be useful,
+            but WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+            Lesser General Public License for more details.
+
+            You should have received a copy of the GNU Lesser General Public
+            License along with this Module; if not, write to the Free Software
+            Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+        --------------------------------------------------------------------------------
+        ==> Cholesky/License.txt <==
+        --------------------------------------------------------------------------------
+
+            CHOLMOD/Cholesky module, Copyright (C) 2005-2006, Timothy A. Davis.
+            CHOLMOD is also available under other licenses; contact authors for
+            details.  http://www.suitesparse.com
+
+            Note that this license is for the CHOLMOD/Cholesky module only.
+            All CHOLMOD modules are licensed separately.
+
+            ----------------------------------------------------------------------------
+
+
+            This Module is free software; you can redistribute it and/or
+            modify it under the terms of the GNU Lesser General Public
+            License as published by the Free Software Foundation; either
+            version 2.1 of the License, or (at your option) any later version.
+
+            This Module is distributed in the hope that it will be useful,
+            but WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+            Lesser General Public License for more details.
+
+            You should have received a copy of the GNU Lesser General Public
+            License along with this Module; if not, write to the Free Software
+            Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+        --------------------------------------------------------------------------------
+        ==> Core/License.txt <==
+        --------------------------------------------------------------------------------
+
+            CHOLMOD/Core Module.  Copyright (C) 2005-2006, Univ. of Florida.  Author:
+            Timothy A. Davis.  CHOLMOD is also available under other licenses; contact
+            authors for details.  http://www.suitesparse.com
+
+            Note that this license is for the CHOLMOD/Core module only.
+            All CHOLMOD modules are licensed separately.
+
+
+            ----------------------------------------------------------------------------
+
+
+            This Module is free software; you can redistribute it and/or
+            modify it under the terms of the GNU Lesser General Public
+            License as published by the Free Software Foundation; either
+            version 2.1 of the License, or (at your option) any later version.
+
+            This Module is distributed in the hope that it will be useful,
+            but WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+            Lesser General Public License for more details.
+
+            You should have received a copy of the GNU Lesser General Public
+            License along with this Module; if not, write to the Free Software
+            Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+        --------------------------------------------------------------------------------
+        ==> Include/License.txt <==
+        --------------------------------------------------------------------------------
+
+            CHOLMOD/Include/* files.  Copyright (C) 2005-2006, either Univ. of Florida
+            or T. Davis, depending on the file.
+
+            Each file is licensed separately, according to the Module for which it
+            contains definitions and prototypes:
+
+            Include/cholmod.h               LGPL
+            Include/cholmod_blas.h          LGPL
+            Include/cholmod_camd.h          part of Partition module
+            Include/cholmod_check.h         part of Check module
+            Include/cholmod_cholesky.h      part of Cholesky module
+            Include/cholmod_complexity.h    LGPL
+            Include/cholmod_config.h        LGPL
+            Include/cholmod_core.h          part of Core module
+            Include/cholmod_function.h      no license; freely usable, no restrictions
+            Include/cholmod_gpu.h           part of GPU module
+            Include/cholmod_gpu_kernels.h   part of GPU module
+            Include/cholmod_internal.h      LGPL
+            Include/cholmod_io64.h          LGPL
+            Include/cholmod_matrixops.h     part of MatrixOps module -- [NGPL: excluded]
+            Include/cholmod_modify.h        part of Modify module ----- [NGPL: excluded]
+            Include/cholmod_partition.h     part of Partition module
+            Include/cholmod_supernodal.h    part of Supernodal module - [NGPL: excluded]
+            Include/cholmod_template.h      LGPL
+
+        --------------------------------------------------------------------------------
+        ==> Partition/License.txt <==
+        --------------------------------------------------------------------------------
+
+            CHOLMOD/Partition Module.
+            Copyright (C) 2005-2006, Univ. of Florida.  Author: Timothy A. Davis
+            CHOLMOD is also available under other licenses; contact authors for details.
+            http://www.suitesparse.com
+
+            Note that this license is for the CHOLMOD/Partition module only.
+            All CHOLMOD modules are licensed separately.
+
+
+            ----------------------------------------------------------------------------
+
+
+            This Module is free software; you can redistribute it and/or
+            modify it under the terms of the GNU Lesser General Public
+            License as published by the Free Software Foundation; either
+            version 2.1 of the License, or (at your option) any later version.
+
+            This Module is distributed in the hope that it will be useful,
+            but WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+            Lesser General Public License for more details.
+
+            You should have received a copy of the GNU Lesser General Public
+            License along with this Module; if not, write to the Free Software
+            Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+==> COLAMD/Doc/License.txt <==
+    COLAMD, Copyright 1998-2016, Timothy A. Davis.  http://www.suitesparse.com
+    http://www.suitesparse.com
+
+    COLAMD License: BSD 3-clause
+
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+            * Redistributions of source code must retain the above copyright
+              notice, this list of conditions and the following disclaimer.
+            * Redistributions in binary form must reproduce the above copyright
+              notice, this list of conditions and the following disclaimer in the
+              documentation and/or other materials provided with the distribution.
+            * Neither the name of the organizations to which the authors are
+              affiliated, nor the names of its contributors may be used to endorse
+              or promote products derived from this software without specific prior
+              written permission.
+
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+        ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+        DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+        LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+        OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+        DAMAGE.
